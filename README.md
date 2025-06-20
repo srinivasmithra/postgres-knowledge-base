@@ -5,6 +5,17 @@
 **Type:** tool
 
 ### About Project
+## Screenshots
+### UI
+
+![Chatbot Preview](_assets/ui.png)
+
+### FLow
+![Chatbot Preview](_assets/flow.png)
+
+### Embed and Store Chunks into db using pgvector extension
+![Chatbot Preview](_assets/embed.png)
+
 # Postgres-powered Chatbot Plugin for Dify
 
 This project is a custom Dify Plugin that enables intelligent Q&A over a code repository using PostgreSQL, pgvector, and LangChain. It powers a chatbot that answers technical questions based on embedded code files.
