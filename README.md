@@ -5,7 +5,7 @@
 **Type:** tool
 
 ### About Project
-# 💬 Postgres-powered Chatbot Plugin for Dify
+# Postgres-powered Chatbot Plugin for Dify
 
 This project is a custom Dify Plugin that enables intelligent Q&A over a code repository using PostgreSQL, pgvector, and LangChain. It powers a chatbot that answers technical questions based on embedded code files.
 
@@ -22,7 +22,7 @@ This project is a custom Dify Plugin that enables intelligent Q&A over a code re
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 User Query ──▶  Plugin Tool (PostgreSQL)
@@ -36,7 +36,7 @@ User Query ──▶  Plugin Tool (PostgreSQL)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 postgresql-plugin/
@@ -55,7 +55,7 @@ postgresql-plugin/
 
 ---
 
-## 🧠 Embedding Pipeline
+## Embedding Pipeline
 
 1. Files in `mock_data/code_repos/` are parsed and chunked by `parse_repos.py`.
 2. Chunks are embedded using `sentence-transformers/all-MiniLM-L6-v2`.
@@ -64,7 +64,7 @@ postgresql-plugin/
 
 ---
 
-## 🧪 Chat Flow Setup in Dify
+## Chat Flow Setup in Dify
 
 1. **Start Node** → takes user query.
 2. **Tool Node** → invokes PostgreSQL plugin.
@@ -72,7 +72,7 @@ postgresql-plugin/
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 - Python + FastAPI (via Dify Plugin)
 - PostgreSQL + pgvector
@@ -81,7 +81,7 @@ postgresql-plugin/
 - Dify Agent Flow
 
 ---
-## 📫 Contact
+## Contact
 
 This is part of exploration for integrating custom tooling in Dify for internal knowledge systems.
 
