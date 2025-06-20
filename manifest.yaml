@@ -1,0 +1,53 @@
+version: 0.0.1
+type: plugin
+author: mithra
+name: postgresql
+label:
+  en_US: postgresql
+  ja_JP: postgresql
+  zh_Hans: postgresql
+  pt_BR: postgresql
+description:
+  en_US: Knowledgeable chat bot via postgres server
+  ja_JP: Knowledgeable chat bot via postgres server
+  zh_Hans: Knowledgeable chat bot via postgres server
+  pt_BR: Knowledgeable chat bot via postgres server
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: false
+      llm: false
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+    node:
+      enabled: false
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/postgresql.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2025-06-19T17:31:55.542473-05:00
+privacy: PRIVACY.md
+verified: false

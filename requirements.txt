@@ -1,0 +1,8 @@
+dify_plugin>=0.2.0,<0.3.0
+sentence-transformers
+langchain
+pgvector
+psycopg2-binary
+langchain-community
+tqdm
+openai

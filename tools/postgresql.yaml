@@ -1,0 +1,30 @@
+identity:
+  name: postgresql
+  author: mithra
+  label:
+    en_US: postgresql
+    zh_Hans: postgresql
+    pt_BR: postgresql
+description:
+  human:
+    en_US: Knowledgeable chat bot via postgres server
+    zh_Hans: Knowledgeable chat bot via postgres server
+    pt_BR: Knowledgeable chat bot via postgres server
+  llm: Knowledgeable chat bot via postgres server
+parameters:
+  - name: query
+    type: string
+    required: true
+    label:
+      en_US: Query string
+      zh_Hans: 查询语句
+      pt_BR: Query string
+    human_description:
+      en_US: Knowledgeable chat bot via postgres server
+      zh_Hans: Knowledgeable chat bot via postgres server
+      pt_BR: Knowledgeable chat bot via postgres server
+    llm_description: Knowledgeable chat bot via postgres server
+    form: llm
+extra:
+  python:
+    source: tools/postgresql.py

@@ -1,0 +1,54 @@
+identity:
+  author: mithra
+  name: postgresql
+  label:
+    en_US: postgresql
+    zh_Hans: postgresql
+    pt_BR: postgresql
+  description:
+    en_US: Knowledgeable chat bot via postgres server
+    zh_Hans: Knowledgeable chat bot via postgres server
+    pt_BR: Knowledgeable chat bot via postgres server
+  icon: icon.svg
+tools:
+  - tools/postgresql.yaml
+credentials_for_provider:
+  pg_host:
+    type: text-input
+    required: true
+    label:
+      en_US: Hostname
+      zh_Hans: Hostname
+    placeholder:
+      en_US: localhost
+      zh_Hans: Hostname
+  pg_port:
+    type: text-input
+    required: true
+    label:
+      en_US: Port
+      zh_Hans: Hostname
+    placeholder:
+      en_US: "5432"
+      zh_Hans: Hostname
+  pg_user:
+    type: text-input
+    required: true
+    label:
+      en_US: Username
+      zh_Hans: Hostname
+  pg_password:
+    type: secret-input
+    required: true
+    label:
+      en_US: Password
+      zh_Hans: Hostname
+  pg_database:
+    type: text-input
+    required: true
+    label:
+      en_US: DB Name
+      zh_Hans: Hostname
+extra:
+  python:
+    source: provider/postgresql.py
